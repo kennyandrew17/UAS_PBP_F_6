@@ -53,7 +53,6 @@ public class validasi extends AppCompatActivity {
         String kettrf = getIntent().getExtras().getString("kettrf");
 
         namavalid.setText(namatrf);
-        rekvalid.setText(norektrf);
         emailvalid.setText(emailtrf);
         nominalvalid.setText(nominaltrf);
         ketvalid.setText(kettrf);
@@ -74,7 +73,6 @@ public class validasi extends AppCompatActivity {
                     Intent i = new Intent(validasi.this, laporan.class);
                     Toast.makeText(getApplicationContext(), "Transaksi Sukses", Toast.LENGTH_SHORT).show();
                     i.putExtra("namatrf", namavalid.getText().toString());
-                    i.putExtra("norektrf", rekvalid.getText().toString());
                     i.putExtra("emailtrf", emailvalid.getText().toString());
                     i.putExtra("nominaltrf", nominalvalid.getText().toString());
                     i.putExtra("kettrf", ketvalid.getText().toString());

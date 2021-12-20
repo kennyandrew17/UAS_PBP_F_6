@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class laporan extends AppCompatActivity {
-    TextView norektujuanlapor, namatujuanlapor, emailtujuanlapor, nominallapor, totallapor, biayadmin;
+    TextView namatujuanlapor, emailtujuanlapor, nominallapor, totallapor, biayadmin, namapengirimlapor, emailpengirimlapor;
     Button btnback, btnlogout;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -37,7 +37,8 @@ public class laporan extends AppCompatActivity {
         namatujuanlapor = (TextView) findViewById(R.id.tvnamatujuanlapor);
         emailtujuanlapor = (TextView) findViewById(R.id.tvemaillapor);
         nominallapor = (TextView) findViewById(R.id.tvnominallapor);
-        totallapor = (TextView) findViewById(R.id.tvtotallapor);
+        namapengirimlapor = (TextView) findViewById(R.id.namapengirimlapor);
+        emailpengirimlapor = (TextView) findViewById(R.id.emailpengirimlapor);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
@@ -47,21 +48,19 @@ public class laporan extends AppCompatActivity {
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
-                namatujuanlapor.setText(documentSnapshot.getString("nama"));
-                emailtujuanlapor.setText(documentSnapshot.getString("email"));
+                namapengirimlapor.setText(documentSnapshot.getString("nama"));
+                emailpengirimlapor.setText(documentSnapshot.getString("email"));
             }
         });
 
         String adm = biayadmin.getText().toString();
         String namatrf = getIntent().getExtras().getString("namatrf");
-        String norektrf = getIntent().getExtras().getString("norektrf");
         String emailtrf = getIntent().getExtras().getString("emailtrf");
         String nominaltrf = getIntent().getExtras().getString("nominaltrf");
 
         //String total = totallapor.getTransitionName().toString();
 
         namatujuanlapor.setText(namatrf);
-        norektujuanlapor.setText(norektrf);
         emailtujuanlapor.setText(emailtrf);
         nominallapor.setText(nominaltrf);
 
@@ -77,6 +76,8 @@ public class laporan extends AppCompatActivity {
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent i = new Intent(laporan.this, home.class);
+                startActivity(i);
                 finish();
             }
         });

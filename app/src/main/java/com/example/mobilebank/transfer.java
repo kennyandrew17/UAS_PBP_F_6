@@ -34,7 +34,6 @@ public class transfer extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent (transfer.this, validasi.class);
                 i.putExtra("namatrf", namatuju.getText().toString());
-                i.putExtra("norektrf", norektuju.getText().toString());
                 i.putExtra("emailtrf", emailtuju.getText().toString());
                 i.putExtra("nominaltrf", nominaltuju.getText().toString());
                 i.putExtra("kettrf", kettuju.getText().toString());
