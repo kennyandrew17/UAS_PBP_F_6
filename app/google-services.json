@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "641064545825",
+    "project_id": "uas-f-pbp-kelompok-6",
+    "storage_bucket": "uas-f-pbp-kelompok-6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641064545825:android:3867c20fe67658f28d3d60",
+        "android_client_info": {
+          "package_name": "com.example.mobilebank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641064545825-2l625vpp85r1m94cgfokkjgcb7hlr321.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVgUtmdOSFX_iZB29PyXlr56RuW-NkbH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641064545825-2l625vpp85r1m94cgfokkjgcb7hlr321.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

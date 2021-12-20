@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sand">
+    <TextView
+        android:id="@+id/tvcashup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CashUp"
+        android:drawableRight="@drawable/ic_baseline_monetization_on_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvcashup"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:text="E-wallet"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TableLayout
+        android:id="@+id/tabel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvcashup"
+        android:background="@color/green"
+        android:stretchColumns="1">
+        <TableRow>
+            <Button
+                android:id="@+id/btnback"
+                android:background="@color/white"
+                android:text="back"
+                android:textColor="@color/white"
+                android:textSize="10pt"
+                android:gravity="right|center_vertical"
+                android:paddingTop="10dp"/>
+            <Button
+                android:id="@+id/btnlogout"
+                android:background="@color/white"
+                android:text="log out"
+                android:textColor="@color/white"
+                android:textSize="10pt"
+                android:gravity="right|center_vertical"
+                android:paddingTop="10dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvlaporan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabel"
+        android:background="@color/white"
+        android:text="Transaksi Sukses"
+        android:textAlignment="center"
+        android:textStyle="bold">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/tvlaporan"
+        android:background="@color/white">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama penerima"/>
+                <TextView
+                    android:id="@+id/tvnamatujuanlapor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email tujuan"/>
+                <TextView
+                    android:id="@+id/tvemaillapor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama pengirim"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email pengirim"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nominal"/>
+                <TextView
+                    android:id="@+id/tvnominallapor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Potongan Admin"/>
+                <TextView
+                    android:id="@+id/tvbiayaadmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6000"
+                    android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"/>
+                <TextView
+                    android:id="@+id/tvtotallapor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

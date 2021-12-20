@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sand"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvcashup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash Up"
+        android:drawableRight="@drawable/ic_baseline_monetization_on_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvcashup"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:text="E-wallet"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TableLayout
+        android:id="@+id/tabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvcashup"
+        android:background="@color/green"
+        android:stretchColumns="1">
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnback1"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:gravity="right|center_vertical"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="10pt" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tabelregis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabel"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/green"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="REGISTER"
+            android:textAlignment="center"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/regisemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/regispin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="PIN"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/registelp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="No Telphone"
+                android:inputType="phone"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/regisnama"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Nama"
+                android:inputType="text"/>
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabelregis"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/btnregisconfirm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    </TableLayout>
+
+</RelativeLayout>

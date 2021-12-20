@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/sand"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="CashUp"
+        android:textColor="@color/green"
+        android:textSize="100dp"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_baseline_monetization_on_24" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/green">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:background="@color/green"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/editnama"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Email" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/editpin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="PIN anda"
+                android:inputType="textPassword"/>
+
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Log in"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-10dp"
+        android:text="Register" />
+
+</LinearLayout>
